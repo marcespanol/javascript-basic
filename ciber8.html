@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciber</title>
+</head>
+<body>
+    <script>
+        function calculadora(operador, valor1, valor2) {
+            if(operador === "suma") {
+                return valor1 + valor2;
+            } else if (operador === "resta") {
+                return valor1 - valor2;
+            } else if (operador === "multiplicació") {
+                return valor1 * valor2;
+            } else {
+                return "Operació no disponible. Només es poden realitzar sumes, restes i multiplicacions."
+            }
+        }
+
+        var resultat = calculadora("resta", 40, 20);
+        console.log(resultat);
+    </script>
+    
+</body>
+</html>
